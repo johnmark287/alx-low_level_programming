@@ -2,21 +2,19 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - Entry point
  *
- * Return: Always 0.
+ * Description: Prints the lowercase alphabets
+ *
+ * print_alphabet() prints the lowercase of alphabets
+ *
+ * Return: Void
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 void print_alphabet(void)
 {
 	char alpha;
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
-		putchar('a');
+		putchar(alpha);
 	putchar('\n');
 }

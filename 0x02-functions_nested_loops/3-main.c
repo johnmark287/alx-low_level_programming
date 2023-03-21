@@ -3,6 +3,8 @@
 /**
  * main - check the code.
  *
+ * Description: checks for lowercase character.
+ *
  * Return: Always 0.
  */
 int main(void)
@@ -15,6 +17,6 @@ int main(void)
 	_putchar(r + '0');
 	r = _islower(108);
 	_putchar(r + '0');
-	_putchar(r + '0');
+	_putchar('\n');
 	return (0);
 }

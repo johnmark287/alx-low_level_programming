@@ -1,5 +1,6 @@
+#include<stdio.h>
 #include "main.h"
-void print_alphabet(void);
+
 /**
  * main - check the code
  *
@@ -13,7 +14,7 @@ int main(void)
 
 void print_alphabet(void)
 {
-	int alpha;
+	char alpha;
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 		putchar('a');

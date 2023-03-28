@@ -17,25 +17,32 @@ void puts_half(char *str)
 		len++;
 	}
 
-	if ((len / 2) == 0)
+	if (len != '\0')
 	{
-		int n = floor(len / 2);
-		int L = n - 1;
-
-		for (i = L; i <= len; i++)
+		if ((len / 2) == 0)
 		{
-			_putchar(str[i]);
+			int n = floor(len / 2);
+			int L = n - 1;
+
+			for (i = L; i <= len; i++)
+			{
+				_putchar(str[i]);
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
+		else
+		{
+			int n = floor(len / 2);
+
+			for (i = n; i < len; i++)
+			{
+				_putchar(str[i]);
+			}
+			_putchar('\n');
+		}
 	}
 	else
 	{
-		int n = floor(len / 2);
-
-		for (i = n; i < len; i++)
-		{
-			_putchar(str[i]);
-		}
 		_putchar('\n');
 	}
 }

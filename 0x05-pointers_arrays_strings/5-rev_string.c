@@ -10,20 +10,22 @@
  */
 void rev_string(char *s)
 {
-	int len;
-	
-	len = 0;
+	int len, i;
+	char buffer[500];
 
-	while (len != '\0')
+	len = 0;
+	while (s[len] != '\0')
 	{
+		*(buffer + len) = s[len];
 		len++;
 	}
-	if (len >= 0)
+
+	len = len - 1;
+	i = 0;
+	while (len >= 0)
 	{
-		len = len - 1;
-		while (len >= 0)
-		{
-			putchar(s[len]);
-		}
+		s[len] = *(buffer + i);
+		len--;
+		i++;
 	}
 }

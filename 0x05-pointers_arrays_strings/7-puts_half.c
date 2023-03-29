@@ -30,14 +30,12 @@ void puts_half(char *str)
 			{
 				_putchar(str[i]);
 			}
-			/**
-			 *  _putchar('\n');
-			 */
+			_putchar('\n');
 		}
 		else
 		{
 			int n = floor(len / 2);
-			
+
 			for (i = n; i < len; i++)
 			{
 				_putchar(str[i]);
@@ -50,4 +48,3 @@ void puts_half(char *str)
 		_putchar('\n');
 	}
 }
-

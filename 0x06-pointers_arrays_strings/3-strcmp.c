@@ -1,15 +1,13 @@
 #include "main.h"
 #include<string.h>
 /**
- * _strncpy - copys n bytes of string 1 to tring 2.
+ * _strcmp - copys n bytes of string 1 to tring 2.
  *
- * @dest: string 1.
+ * @s1: string 1.
  *
- * @src: string 2.
+ * @s2: string 2.
  *
- * @n: number of bytes from src.
- *
- * Return: pointer to dest.
+ * Return: -15, 15, or 0.
  */
 int _strcmp(char *s1, char *s2)
 {

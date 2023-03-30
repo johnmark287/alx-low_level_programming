@@ -9,7 +9,7 @@
  *
  * @n: number of bytes from src.
  *
- * return: char.
+ * Return: pointer to dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {

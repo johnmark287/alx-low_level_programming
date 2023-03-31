@@ -13,22 +13,13 @@ char *string_toupper(char *s)
         char a, b;
 
         i = 0;
-        a = 'a';
-        b = 'A';
-        while (*(s + i) != '\0')
+        while (*(s + i))
         {
-                if (s[i] >= 'a' && s[i] <= 'z')
+                if (*(s + i) >= 'a' && *(s + i) <= 'z')
                 {
-                        while (*(s + i) != '\0')
-                        {
-                                while (s[i] == a)
-                                {
-                                        s[i] = b;
-                                        a++;
-                                        b++;
-                                }
-                        }
-                }
-        }
-        return (s);
+			*(s + i) -= ('a' - 'A');
+			i++;
+		}
+	}
+	return (s);
 }

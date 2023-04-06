@@ -1,6 +1,15 @@
 #include "main.h"
 #include <math.h>
 
+/**
+ * find_sqrt - finds the sqrt by multiplication.
+ *
+ * @n: parameter 1.
+ *
+ * @x: parameter 2.
+ *
+ * Return: int.
+ */
 int find_sqrt(int n, int x)
 {
 	if (x * x == n)

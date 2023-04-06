@@ -17,7 +17,7 @@ int is_prime(int n, int k)
 }
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0.
+ * is_prime_number - determines if n is prime.
  *
  * @n: parameter.
  *

@@ -14,7 +14,7 @@ if (str ==NULL)
 return (NULL);
 for (i = 0; i < str[size]; size++)
 ;
-size++
+size++;
 s = (char *)malloc(size * (sizeof(char)));
 if (s == NULL)
 return (NULL);

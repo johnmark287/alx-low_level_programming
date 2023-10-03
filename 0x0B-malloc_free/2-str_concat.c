@@ -13,12 +13,6 @@ int i, j, k;
 int size1, size2;
 
 i = 0;
-if (s1 == NULL)
-i = 0;
-if (s2 == NULL)
-j = 0;
-if (s1 == NULL && s2 == NULL)
-return (NULL);
 while (s1[i] != '\0')
 {
 i++;
@@ -31,6 +25,12 @@ j++;
 }
 size2 = j;
 size2++;
+if (s1 == NULL)
+i = 0;
+if (s2 == NULL)
+j = 0;
+if (s1 == NULL && s2 == NULL)
+return (NULL);
 s = (char *)malloc((size1 + size2) *(sizeof(char)));
 if (s == NULL)
 return (NULL);

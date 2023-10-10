@@ -9,7 +9,7 @@
  */
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+return (write(1, &c, 1));
 }
 /**
  * main - prints the name of the file it was compiled from,
@@ -18,16 +18,16 @@ int _putchar(char c)
 */
 int main(void)
 {
-    int i;
-    char *str;
+int i;
+char *str;
 
-    str = __FILE__;
-    i = 0;
-    while (str[i])
-    {
-        _putchar(str[i]);
-        i++;
-    }
-    _putchar('\n');
-    return (0);
+str = __FILE__;
+i = 0;
+while (str[i])
+{
+_putchar(str[i]);
+i++;
+}
+_putchar('\n');
+return (0);
 }

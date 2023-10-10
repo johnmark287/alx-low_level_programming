@@ -18,15 +18,16 @@ int _putchar(char c)
 */
 int main(void)
 {
-int i;
-char *str;
-str = __FILE__;
-i = 0;
-while (str[i])
-{
-_putchar(str[i]);
-i++;
-}
-_putchar('\n');
-return (0);
+    int i;
+    char *str;
+
+    str = __FILE__;
+    i = 0;
+    while (str[i])
+    {
+        _putchar(str[i]);
+        i++;
+    }
+    _putchar('\n');
+    return (0);
 }

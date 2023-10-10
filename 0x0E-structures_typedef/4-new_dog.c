@@ -28,15 +28,17 @@ return (str);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *newDog;
-char *newName, *newOwner;
-newDog = malloc(sizeof(dog_t));
-if (newDog == NULL)
-return (NULL);
-newName = _strdup(name);
-newOwner = _strdup(owner);
-newDog->name = newName;
-newDog->age = age;
-newDog->owner = newOwner;
-return (newDog);
+    dog_t *newDog;
+    char *newName, *newOwner;
+
+    newDog = malloc(sizeof(dog_t));
+    if (newDog == NULL)
+        return (NULL);
+    newName = _strdup(name);
+    newOwner = _strdup(owner);
+
+    newDog->name = newName;
+    newDog->age = age;
+    newDog->owner = newOwner;
+    return (newDog);
 }

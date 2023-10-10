@@ -8,18 +8,17 @@
 */
 char *_strdup(char *s)
 {
-    int i, j;
-    char *str;
-
-    for (i = 0; s[i]; i++)
-        ;
-    str = malloc((i + 1) * sizeof(char));
-    if (str == NULL)
-        return (NULL);
-    for (j = 0; j < i; j++)
-        str[j] = s[j];
-    str[j] = '\0';
-    return (str);
+int i, j;
+char *str;
+for (i = 0; s[i]; i++)
+;
+str = malloc((i + 1) * sizeof(char));
+if (str == NULL)
+return (NULL);
+for (j = 0; j < i; j++)
+str[j] = s[j];
+str[j] = '\0';
+return (str);
 }
 /**
  * init_dog - initialize a variable of type struct dog.

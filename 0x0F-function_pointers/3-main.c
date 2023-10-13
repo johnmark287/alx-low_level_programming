@@ -1,9 +1,16 @@
 #include "3-calc.h"
 #include <stdlib.h>
+/**
+ * main - Checks code.
+ * @argc: Argument count.
+ * @argv: Argument vector.
+ * Return: 0 on success.
+*/
 int main(int argc, char **argv)
 {
 	int a, b, c;
 	int (*f)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -17,7 +24,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	c = f(a ,b);
+	c = f(a, b);
 	printf("%d\n", c);
 	return (0);
 }

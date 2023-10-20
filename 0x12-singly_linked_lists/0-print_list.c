@@ -1,8 +1,10 @@
 #include "lists.h"
 /**
 * print_list - print size of linked list elements.
+* 
 * @h: pointer to first node of list.
-* Return: Number of nodes.
+* 
+* Return: the number of nodes.
 */
 size_t print_list(const list_t *h)
 {

@@ -8,7 +8,7 @@
  * @new: node to add to the new list.
  * Return: pointer to the new list.
 */
-listint_t **_ra(listint_t **list, size_t size, listint_t *new)
+size_t free_listint_safe(listint_t **h)
 {
 	listint_t **newlist;
 	size_t i;

@@ -8,7 +8,7 @@
  * @new: new node to add to the list.
  * Return: pointer to the new list.
 */
-const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
+size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t **newlist;
 	size_t i;

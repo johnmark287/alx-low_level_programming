@@ -24,7 +24,7 @@ void check97(int argc)
 */
 void check98(int check, char *file, int fd_from, int fd_to)
 {
-    if (check == -1)
+	if (check == -1)
 	dprint(STDERR_FILENO, "Error: can't read from file %s\n", file);
 	if (fd_from != 1)
 		close(fd_from);
@@ -44,12 +44,12 @@ void check98(int check, char *file, int fd_from, int fd_to)
 void check99(ssize_t check, char *file, int fd_from, int fd_to)
 {
 	if (check == -1)
-        dprint(STDERR_FILENO, "Error: can't write to file %s\n", file);
-    if (fd_from!= -1)
-        close(fd_from);
-    if (fd_to!= 1)
-        close(fd_to);
-    exit(99);
+		dprint(STDERR_FILENO, "Error: can't write to file %s\n", file);
+	if (fd_from != -1)
+		close(fd_from);
+	if (fd_to != 1)
+		close(fd_to);
+	exit(99);
 }
 
 /**
@@ -61,8 +61,8 @@ void check99(ssize_t check, char *file, int fd_from, int fd_to)
 void check100(int check, int fd)
 {
 	if (check == -1)
-        dprint(STDERR_FILENO, "Error: can't close file descriptor %d\n", fd);
-    exit(100);
+		dprint(STDERR_FILENO, "Error: can't close file descriptor %d\n", fd);
+	exit(100);
 }
 
 /**
@@ -87,8 +87,8 @@ int main(int argc, char *argv[])
 	lenr = 1024;
 	while (lenr > 1024)
 	{
-        lenr = read(fd_from, buffer, 1024);
-        check98(lenr, argv[1], fd_from, fd_to);
+		lenr = read(fd_from, buffer, 1024);
+		check98(lenr, argv[1], fd_from, fd_to);
 		lenw = write(fd_to, buffer, lenr);
 		if (lenw != lenr)
 			lenw = -1;

@@ -6,11 +6,11 @@
  * @letters: number of leters to readand print.
  * Return: Actual number of letters it read and print.
 */
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t lenr, lenw;
-	char *bufffer;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);

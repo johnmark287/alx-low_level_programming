@@ -25,7 +25,7 @@ void check97(int argc)
 void check98(int check, char *file, int fd_from, int fd_to)
 {
 	if (check == -1)
-	dprint(STDERR_FILENO, "Error: can't read from file %s\n", file);
+	dprintf(STDERR_FILENO, "Error: can't read from file %s\n", file);
 	if (fd_from != 1)
 		close(fd_from);
 	if (fd_to != -1)
@@ -38,13 +38,13 @@ void check98(int check, char *file, int fd_from, int fd_to)
  * @check: checks if true or false.
  * @file: file_to name.
  * @fd_from: file descriptor of file_from, or -1.
- * fd_to: file descriptor of file to, or -1.
+ * @fd_to: file descriptor of file to, or -1.
  * Return: void.
 */
 void check99(ssize_t check, char *file, int fd_from, int fd_to)
 {
 	if (check == -1)
-		dprint(STDERR_FILENO, "Error: can't write to file %s\n", file);
+		dprintf(STDERR_FILENO, "Error: can't write to file %s\n", file);
 	if (fd_from != -1)
 		close(fd_from);
 	if (fd_to != 1)
@@ -61,7 +61,7 @@ void check99(ssize_t check, char *file, int fd_from, int fd_to)
 void check100(int check, int fd)
 {
 	if (check == -1)
-		dprint(STDERR_FILENO, "Error: can't close file descriptor %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: can't close file descriptor %d\n", fd);
 	exit(100);
 }
 
